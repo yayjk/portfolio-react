@@ -1,0 +1,36 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  background-color: darkgray;
+}
+
+.container > div {
+  padding: 8px;
+  text-align: center;
+  border: solid 2px black;
+}
+
+.container {
+  height: inherit;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 0.2fr 2fr 0.5fr;
+}
+
+.header {
+  grid-column: 2/12;
+}
+
+.menu {
+  grid-column: 2/12;
+}
+
+.content {
+  grid-column: 2/12;
+}
+
+.footer {
+  grid-column: 1/13;
+}

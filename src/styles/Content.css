@@ -1,0 +1,61 @@
+.content > div {
+  padding: 8px;
+  text-align: center;
+  border: solid 1px black;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.about {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.provisions {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+
+.bio {
+  grid-column: 1 / -1;
+}
+
+.skills {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template: 1fr/4fr;
+}
+
+.project {
+  grid-column: 1 / -1;
+}
+
+.contact {
+  grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .provisions {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .provisions {
+    grid-template: 1fr/4fr;
+  }
+
+  .about {
+    grid-template: 1fr/2fr;
+  }
+}
