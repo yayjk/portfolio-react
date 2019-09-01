@@ -1,7 +1,9 @@
 .contact {
+  margin-top: $m-size;
   padding: $m-size;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: auto;
+  background-color: $brand-white;
 }

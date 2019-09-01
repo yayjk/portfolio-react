@@ -6,7 +6,7 @@ html {
 body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: $l-size;
-  background-color: $brand-blue;
+  background-color: white;
 }
 
 html,
@@ -19,4 +19,22 @@ body,
 .container > div:not(.content) {
   text-align: center;
   padding: $m-size;
+}
+
+@media only screen and (max-width: $tablets) {
+  body {
+    font-size: $size-34;
+  }
+}
+
+@media only screen and (max-width: $normal-phones) {
+  body {
+    font-size: $size-33;
+  }
+}
+
+@media only screen and (max-width: $tiny-phones) {
+  body {
+    font-size: $m-size;
+  }
 }

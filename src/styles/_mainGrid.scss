@@ -6,10 +6,10 @@
 
 .header {
   grid-column: 2/12;
-}
-
-.menu {
-  grid-column: 2/12;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: $brand-white;
 }
 
 .content {
@@ -17,5 +17,8 @@
 }
 
 .footer {
+  margin-top: $m-size;
   grid-column: 1/13;
+  background-color: black;
+  color: $brand-white;
 }
