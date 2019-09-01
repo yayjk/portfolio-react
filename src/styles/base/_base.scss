@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: $m-size;
+  background-color: $brand-blue;
+}
+
+.container > div {
+  text-align: center;
+}

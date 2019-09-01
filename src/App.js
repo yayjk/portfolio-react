@@ -1,5 +1,6 @@
 import React from "react";
-import "./App.css";
+import "./styles/styles.scss";
+import "normalize.css/normalize.css";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Content from "./components/Content";
