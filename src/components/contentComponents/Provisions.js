@@ -3,10 +3,10 @@ import React from "react";
 function Provisions() {
   return (
     <div className="provisions">
-      <span>ONE</span>
-      <span>TWO</span>
-      <span>THREE</span>
-      <span>FOUR</span>
+      <span>Responsive UI</span>
+      <span>Great Designs</span>
+      <span>Latest Frameworks</span>
+      <span>Quick Response time</span>
     </div>
   );
 }

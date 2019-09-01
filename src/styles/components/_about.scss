@@ -1,0 +1,48 @@
+//image-sizes
+$img-xl: 30rem;
+$img-l: 20rem;
+$img-m: 15rem;
+$img-s: 10rem;
+
+.pro_pic {
+  margin: 0 auto;
+}
+
+.pro_pic > img {
+  height: $img-xl;
+  width: $img-xl;
+  border-radius: $img-xl;
+  padding: $m-size;
+}
+
+.pro_summary {
+  padding: $m-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: $tablets) {
+  .pro_pic > img {
+    height: $img-l;
+    width: $img-l;
+    border-radius: $img-xl;
+  }
+}
+
+@media only screen and (max-width: $normal-phones) {
+  .pro_pic > img {
+    height: $img-m;
+    width: $img-m;
+    border-radius: $img-xl;
+  }
+}
+
+@media only screen and (max-width: $tiny-phones) {
+  .pro_pic > img {
+    height: $img-s;
+    width: $img-s;
+    border-radius: $img-xl;
+  }
+}
