@@ -1,5 +1,7 @@
 .project {
-  background-color: $brand-blue;
+  box-shadow: $s-size $s-size #7171b8;
+  border-radius: $s-size;
+  background-color: $brand-white;
   margin-top: $m-size;
   padding: $m-size;
   display: flex;

@@ -1,4 +1,22 @@
-.provisions > span {
+.provision-box {
   padding: $m-size;
   text-align: center;
+  flex-basis: 25%;
+  box-sizing: border-box;
+}
+.provision-title {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: $large-devices) {
+  .provision-box {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (max-width: $tiny-phones) {
+  .provision-box {
+    flex-basis: 100%;
+  }
 }

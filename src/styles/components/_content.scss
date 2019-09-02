@@ -23,18 +23,6 @@
   background-color: $brand-white;
 }
 
-.skills {
-  margin-top: $m-size;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  background-color: $brand-white;
-}
-
 @media only screen and (max-width: $tablets) {
   .about {
     grid-template-columns: 1fr;
