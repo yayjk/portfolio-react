@@ -1,19 +1,9 @@
+@import "./components/skills";
+@import "./components/project";
+
 .bio {
   background-color: $brand-blue;
   margin-top: $m-size;
   padding: $m-size;
   text-align: center;
-}
-
-.skills {
-  box-shadow: $s-size $s-size #7171b8;
-  border-radius: $s-size;
-  margin-top: $m-size;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  background-color: $brand-white;
 }

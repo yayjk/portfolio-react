@@ -1,3 +1,16 @@
+.skills {
+  box-shadow: $s-size $s-size #3f3fa8;
+  border-radius: $s-size;
+  margin-top: $m-size;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: $brand-white;
+}
+
 .skills > span {
   padding: $m-size;
   text-align: center;

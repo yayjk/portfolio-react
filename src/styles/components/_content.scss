@@ -1,3 +1,8 @@
+@import "./components/about";
+@import "./components/provisions";
+@import "./components/bio";
+@import "./components/contact";
+
 .content > div {
   box-shadow: $s-size $s-size #f1f1f1;
   border-radius: $s-size;
@@ -5,27 +10,4 @@
 .content {
   display: flex;
   flex-direction: column;
-}
-
-.about {
-  margin-top: $m-size;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-
-.provisions {
-  margin-top: $m-size;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  background-color: $brand-white;
-}
-
-@media only screen and (max-width: $tablets) {
-  .about {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
 }

@@ -1,6 +1,12 @@
 //image-sizes
 $radius: 30rem;
 
+.about {
+  margin-top: $m-size;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
 #image {
   content: url("../../assets/pro_pic/pro_pic_xl.webp");
   border-radius: $radius;
@@ -28,12 +34,15 @@ $radius: 30rem;
   #image {
     content: url("../../assets/pro_pic/pro_pic_l.webp");
   }
-
   .pro_pic {
     border-radius: $s-size $s-size 0px 0px;
   }
   .pro_summary {
     border-radius: 0px 0px $s-size $s-size;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
