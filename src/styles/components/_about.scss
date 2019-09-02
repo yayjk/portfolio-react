@@ -1,13 +1,9 @@
 //image-sizes
-$img-xl: 30rem;
-$img-l: 20rem;
-$img-m: 15rem;
-$img-s: 10rem;
+$radius: 30rem;
 
-.pro_pic > img {
-  height: $img-xl;
-  width: $img-xl;
-  border-radius: $img-xl;
+#image {
+  content: url("../../assets/pro_pic/pro_pic_xl.webp");
+  border-radius: $radius;
   padding: $m-size;
 }
 
@@ -16,6 +12,7 @@ $img-s: 10rem;
   border-radius: $s-size 0px 0px $s-size;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .pro_summary {
@@ -28,11 +25,10 @@ $img-s: 10rem;
 }
 
 @media only screen and (max-width: $tablets) {
-  .pro_pic > img {
-    height: $img-l;
-    width: $img-l;
-    border-radius: $img-xl;
+  #image {
+    content: url("../../assets/pro_pic/pro_pic_l.webp");
   }
+
   .pro_pic {
     border-radius: $s-size $s-size 0px 0px;
   }
@@ -42,29 +38,20 @@ $img-s: 10rem;
 }
 
 @media only screen and (max-width: $normal-phones) {
-  .pro_pic > img {
-    height: $img-m;
-    width: $img-m;
-    border-radius: $img-xl;
+  #image {
+    content: url("../../assets/pro_pic/pro_pic_m.webp");
   }
 }
 
 @media only screen and (max-width: $tiny-phones) {
-  .pro_pic > img {
-    height: $img-s;
-    width: $img-s;
-    border-radius: $img-xl;
+  #image {
+    content: url("../../assets/pro_pic/pro_pic_s.webp");
   }
 }
 
 @media only screen and (max-width: 170px) {
-  .pro_pic > img {
-    height: 70px;
-    width: 70px;
-    border-radius: $img-xl;
-  }
-
-  .pro_pic {
-    align-items: center;
+  #image {
+    max-width: 70px;
+    max-height: 70px;
   }
 }
