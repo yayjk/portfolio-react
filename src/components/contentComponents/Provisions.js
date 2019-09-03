@@ -25,7 +25,7 @@ const provision4 = {
 
 function Provisions() {
   return (
-    <div className="provisions">
+    <div id="provisions">
       <span className="provision-title">I aim to design:</span>
       <ProvisionBox provision={provision1} />
       <ProvisionBox provision={provision2} />

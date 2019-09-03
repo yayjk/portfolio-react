@@ -1,32 +1,35 @@
 .provision-box {
-  padding: $m-size;
-  text-align: center;
   flex-basis: 25%;
-  box-sizing: border-box;
+  margin: $m-size;
+  padding: $s-size;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: $brand-blue;
+  border-radius: $s-size;
 }
+
 .provision-title {
-  flex-basis: 100%;
+  grid-column: 1/-1;
   text-align: center;
 }
 
-.provisions {
+#provisions {
   margin-top: $m-size;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   overflow: auto;
   background-color: $brand-white;
 }
 
 @media only screen and (max-width: $large-devices) {
   .provision-box {
-    flex-basis: 50%;
+    grid-column: span 2;
   }
 }
 
 @media only screen and (max-width: $tiny-phones) {
   .provision-box {
-    flex-basis: 100%;
+    grid-column: 1 / -1;
   }
 }

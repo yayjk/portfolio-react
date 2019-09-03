@@ -4,7 +4,7 @@ import Projects from "./Projects";
 
 function Bio() {
   return (
-    <div className="bio">
+    <div id="bio">
       <Skills />
       <Projects />
     </div>
